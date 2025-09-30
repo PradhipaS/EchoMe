@@ -1,6 +1,6 @@
-import React from 'react'
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import "./Echome.css";
 
 const responses = {
   "About Me": "I am [Your Name], a passionate developer with interest in React, Java, and Cloud technologies.",
@@ -13,42 +13,40 @@ const responses = {
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([
-    { from: "bot", text: "Hello 👋! I’m **EchoMe**, your personal assistant. Choose an option below:" }
+    { from: "bot", text: "Hello 👋! I’m EchoMe, your personal assistant. Choose an option below:" }
   ]);
 
   const handleClick = (option) => {
-    setMessages([...messages, { from: "user", text: option }, { from: "bot", text: responses[option] }]);
+    setMessages([
+      ...messages,
+      { from: "user", text: option },
+      { from: "bot", text: responses[option] }
+    ]);
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
+    <div className="chatbot-container">
       <motion.div
-        className="w-full max-w-md bg-white shadow-lg rounded-2xl p-4 flex flex-col"
+        className="chat-window"
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
       >
-        <h2 className="text-xl font-bold text-center mb-3 text-blue-600">🤖 EchoMe</h2>
+        <div className="chat-header"> EchoMe</div>
 
-        <div className="flex flex-col gap-2 mb-4 overflow-y-auto h-80 border p-2 rounded-lg bg-gray-50">
+        <div className="chat-body">
           {messages.map((msg, index) => (
             <div
               key={index}
-              className={`p-2 rounded-lg max-w-xs ${
-                msg.from === "bot" ? "bg-blue-200 self-start" : "bg-green-200 self-end"
-              }`}
+              className={`chat-message ${msg.from === "bot" ? "bot" : "user"}`}
             >
               {msg.text}
             </div>
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-2">
+        <div className="chat-input">
           {Object.keys(responses).map((option) => (
-            <button
-              key={option}
-              onClick={() => handleClick(option)}
-              className="bg-blue-500 text-white p-2 rounded-xl hover:bg-blue-600 transition"
-            >
+            <button key={option} onClick={() => handleClick(option)}>
               {option}
             </button>
           ))}
@@ -57,4 +55,3 @@ export default function Chatbot() {
     </div>
   );
 }
-

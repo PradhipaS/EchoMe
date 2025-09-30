@@ -1,21 +1,11 @@
 import React from 'react'
 
-const App = () => {
-  return (
-    <div className="container">
-      <div className="chat-popup">
-        <div className="chat-header">
-          <div className="header-info">
-            <h2 className="logo-text">
-              EchoMe
+import Chatbot from "./components/Echome";
 
-            </h2>
-          </div>
-        </div>
-    </div>
-    </div>
-  )
+function App() {
+  return <Chatbot />;
 }
 
-export default App
+export default App;
+
 
