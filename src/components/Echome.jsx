@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./Echome.css";
 
 const responses = {
-  "About Me": "I am [Your Name], a passionate developer with interest in React, Java, and Cloud technologies.",
+  "About Me": "I am Pradhipa Seerangamurugesan, A dedicated, goal-oriented team player eager to apply technical and analytical skills in a dynamic IT environment. Passionate about continuous learning and committed to contributing effectively to challenging projects.",
   "Skills": "Java, React, Spring Boot, Firebase, SQL, Cloud Computing",
   "Projects": "1. Clinic Management System (Java) \n2. Virtual Queue System (Firebase + Kotlin) \n3. Rubik’s Cube Solver (Java)",
   "Education": "B.Tech in Computer Science and Engineering",
@@ -13,7 +13,7 @@ const responses = {
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([
-    { from: "bot", text: "Hello 👋! I’m EchoMe, your personal assistant. Choose an option below:" }
+    { from: "bot", text: "Hello 👋! I’m EchoMe, Pradhipa 's personal assistant. How can I assist you today?" }
   ]);
 
   const handleClick = (option) => {
