@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./Echome.css";
 
 const responses = {
-  "About Me": "I am Pradhipa Seerangamurugesan, A dedicated, goal-oriented team player eager to apply technical and analytical skills in a dynamic IT environment. Passionate about continuous learning and committed to contributing effectively to challenging projects.",
+  "About Me": "I am Pradhipa Seerangamurugesan. I am a Java programmer with knowledge of object-oriented programming, Java, and front-end technologies like HTML, CSS, and JavaScript. I have also worked on building projects using technologies like Spring Boot, Firebase, and React. Apart from backend development, I have experience in web technologies such as HTML, CSS, JavaScript, JSP, and Servlets, and I’ve explored areas like game development, cloud computing, and web application security as part of my academic and project work. I enjoy solving coding problems and developing applications that focus on usability and efficiency. I am eager to learn new technologies, contribute to real-world projects, and grow as a software developer. Outside of coding, I am passionate about continuous learning and enjoy working on creative projects that challenge me to improve both my technical and problem-solving skills.",
   "Skills": "Java, React, Spring Boot, Firebase, SQL, Cloud Computing",
   "Projects": "1. Clinic Management System (Java) \n2. Virtual Queue System (Firebase + Kotlin) \n3. Rubik’s Cube Solver (Java)",
   "Education": "B.Tech in Computer Science and Engineering",
