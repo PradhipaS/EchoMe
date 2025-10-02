@@ -7,7 +7,7 @@ const responses = {
   "Skills": "Java, React, Spring Boot, Firebase, SQL, Cloud Computing",
   "Projects": "1. Clinic Management System (Java) \n2. Virtual Queue System (Firebase + Kotlin) \n3. Rubik’s Cube Solver (Java)",
   "Education": "B.Tech in Computer Science and Engineering",
-  "Contact": "Email: yourmail@example.com | LinkedIn: linkedin.com/in/yourprofile",
+  "Contact": "Email: pradhipa18032003@gmail.com | LinkedIn: linkedin.com/in/yourprofile",
   "Download Resume": "👉 [Click Here to Download Resume](your-resume-link)"
 };
 
